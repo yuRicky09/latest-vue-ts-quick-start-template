@@ -14,6 +14,7 @@ export default defineConfig({
       dts: true,
     }),
     AutoImport({
+      dts: true,
       include: [
         /\.[tj]sx?$/,
         /\.vue$/,
