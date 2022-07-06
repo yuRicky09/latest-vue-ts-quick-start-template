@@ -1,0 +1,5 @@
+@layer components {
+  .click-target-helper {
+    @apply relative after:absolute after:top-[var(--inset-by)] after:left-[var(--inset-by)] after:right-[var(--inset-by)] after:bottom-[var(--inset-by)];
+  }
+}
