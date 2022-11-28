@@ -7,8 +7,6 @@ export {};
 
 declare module "@vue/runtime-core" {
   export interface GlobalComponents {
-    IBxAlarmExclamation: typeof import("~icons/bx/alarm-exclamation")["default"];
-    IBxBattery: typeof import("~icons/bx/battery")["default"];
     RouterLink: typeof import("vue-router")["RouterLink"];
     RouterView: typeof import("vue-router")["RouterView"];
     TheNavbar: typeof import("./src/components/TheNavbar.vue")["default"];
