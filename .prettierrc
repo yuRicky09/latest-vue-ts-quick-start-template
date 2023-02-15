@@ -1,0 +1,11 @@
+{
+  "endOfLine": "crlf",
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "printWidth": 80,
+  "trailingComma": "es5",
+  "htmlWhitespaceSensitivity": "css",
+  "quoteProps": "as-needed",
+  "arrowParens": "always"
+}

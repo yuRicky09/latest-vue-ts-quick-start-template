@@ -1,17 +1,12 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": [
-    "env.d.ts",
-    "src/**/*",
-    "src/**/*.vue",
-    "auto-imports.d.ts",
-    "components.d.ts"
-  ],
+  "include": ["src/**/*", "src/**/*.vue"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["unplugin-icons/types/vue"]
   },
 
   "references": [

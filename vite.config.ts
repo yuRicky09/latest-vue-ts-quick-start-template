@@ -12,18 +12,15 @@ export default defineConfig({
     vue(),
     svgLoader(),
     Components({
-      dts: true,
+      dts: "./src/declaration/components.d.ts",
       resolvers: [IconsResolver()],
+      dirs: ["src/components", "src/layout"],
     }),
     AutoImport({
-      dts: true,
-      include: [
-        /\.[tj]sx?$/,
-        /\.vue$/,
-        /\.vue\?vue/,
-        /\.md$/, //
-      ],
-      imports: ["vue", "vue-router"],
+      dts: "./src/declaration/auto-imports.d.ts",
+      dirs: ["./src/composables", "./src/stores", "./src/utils"],
+      include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/, /\.md$/],
+      imports: ["vue", "vue-router", "pinia"],
       eslintrc: {
         enabled: true,
       },
